@@ -39,33 +39,11 @@ img {
 
 h4 {
     color: teal;
-}
-
-.travelBullets {
-    font-style: italic;
-}
-
-.foodRadio {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
 	font-style: italic;
+	font-size: 14pt;
 }
 
-#color {
-	height: 300px;
-	width: 300px;
-	background-color: yellow;
-}
-
-#place {
-	height: 300px;
-	width: 300px;
-	background-color: yellow;
-}
-
-#ritual {
-	height: 300px;
-	width: 300px;
-	background-color: yellow;
+.favBtns{
+	height: 100px;
+	background-color: yellow
 }

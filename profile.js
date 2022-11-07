@@ -1,20 +1,27 @@
 const colorButton = document.querySelector('#color');
-
-colorButton.addEventListener('click', () => {
-    alert("My favorite color is blue")
-})
-favButtons.appendChild(colorButton)
-
 const placeButton = document.querySelector('#place');
-
-placeButton.addEventListener('click', () => {
-    alert("My favorite place is the ocean")
-})
-favButtons.appendChild(placeButton)
-
 const ritualButton = document.querySelector('#ritual');
+const selectCorrect = document.querySelector('#studyAbroadForm')
 
-ritualButton.addEventListener('click', () => {
+const colorClick = () => {
+    alert("My favorite color is blue")
+}
+
+const placeClick = () => {
+    alert("My favorite place is the ocean")
+}
+
+const ritualClick = () => {
     alert("My favorite ritual is meditating in the sauna")
-})
-favButtons.appendChild(ritualButton)
+}
+
+const selectCorrectClick = (event) => {
+    event.preventDefault()
+    
+    alert('Italy')
+}
+
+colorButton.addEventListener('click', colorClick)
+placeButton.addEventListener('click', placeClick)
+ritualButton.addEventListener('click', ritualClick)
+selectCorrect.addEventListener('click', selectCorrectClick)
